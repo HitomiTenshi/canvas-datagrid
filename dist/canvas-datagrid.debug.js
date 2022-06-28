@@ -11957,7 +11957,7 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
         }
 
         if (cell.style === 'columnHeaderCell') {
-          if (!self.isColumnSelected(cell.columnIndex) && cell.x + cell.width - self.attributes.columnGrabZoneSize - self.style.cellBorderWidth > x || !self.attributes.allowRowReordering) {
+          if (!self.isColumnSelected(cell.columnIndex) && cell.x + cell.width - self.attributes.columnGrabZoneSize - self.style.cellBorderWidth > x || !self.attributes.allowColumnReordering) {
             cell.dragContext = 'cell';
             cell.context = 'cell';
           } else {
