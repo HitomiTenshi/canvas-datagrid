@@ -2558,7 +2558,7 @@ __webpack_require__.r(__webpack_exports__);
     self.eventParent.addEventListener('mousedown', self.mousedown, false);
     self.eventParent.addEventListener('dblclick', self.dblclick, false);
     self.eventParent.addEventListener('click', self.click, false);
-    window.addEventListener('mouseup', self.mouseup, false);
+    self.eventParent.addEventListener('mouseup', self.mouseup, false);
     window.addEventListener('mousemove', self.mousemove);
     self[self.isChildGrid ? 'parentGrid' : 'eventParent'].addEventListener('wheel', self.scrollWheel, false);
     self.canvas.addEventListener('contextmenu', self.contextmenuEvent, false);
@@ -8728,7 +8728,7 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
     self.controlInput.removeEventListener('keypress', self.keypress, false);
     self.controlInput.removeEventListener('keyup', self.keyup, false);
     self.controlInput.removeEventListener('keydown', self.keydown, false);
-    window.removeEventListener('mouseup', self.mouseup, false);
+    self.eventParent.removeEventListener('mouseup', self.mouseup, false);
     window.removeEventListener('mousemove', self.mousemove);
     window.removeEventListener('resize', self.resize);
 
